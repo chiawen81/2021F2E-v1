@@ -1,0 +1,83 @@
+// ——————— 背景色 ———————
+@each $color in $theme-colors {
+    .bg-#{$color} {
+      background: $color;
+    }
+  }
+
+
+// ——————— 排版 ———————
+  $spaceamounts: (
+    -80,
+    -15,
+    0,
+    5,
+    4,
+    8,
+    10,
+    12,
+    15,
+    20,
+    25,
+    28,
+    30,
+    35,
+    36,
+    40,
+    45,
+    46,
+    50,
+    55,
+    60,
+    64,
+    65,
+    75,
+    80,
+    90,
+    100,
+    110,
+    115,
+    120,
+    125,
+    130,
+    133,
+    142,
+    225,
+    240,
+    260
+  );
+  $sides: (top, bottom, left, right);
+  
+@each $space in $spaceamounts {
+    @each $side in $sides {
+      .mg_#{str-slice($side, 0, 1)}_#{$space} {
+        margin-#{$side}: #{$space/16}rem !important;
+      }
+      .pd_#{str-slice($side, 0, 1)}_#{$space} {
+        padding-#{$side}: #{$space/16}rem !important;
+      }
+    }
+  }
+
+
+// ——————— 長、寬 ———————
+@each $space in $spaceamounts {
+    .h#{$space} {
+      height: #{$space/16}rem !important;
+    }
+    .h-#{$space} {
+      width: #{$space}#{"%"} !important;
+    }
+    .min_h#{$space} {
+      min-height: #{$space/16}rem !important;
+    }
+    .w#{$space} {
+      width: #{$space/16}rem !important;
+    }
+    .w-#{$space} {
+      width: #{$space}#{"%"} !important;
+    }
+    .min_w#{$space} {
+      min-width: #{$space/16}rem !important;
+    }
+  }
