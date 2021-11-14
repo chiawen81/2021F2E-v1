@@ -1,0 +1,68 @@
+// ——————————————————  置頂選單  ——————————————————   
+header {
+    padding: 30px 108px;
+    background-color: white !important;
+    
+    .logo{
+        object-fit: contain;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li{
+            padding-left: 27px;
+        }
+        img{
+            height: 34x;
+            width: 34px;
+            padding-right: 8px;
+        }
+
+    }
+}
+
+
+
+// ——————————————————  置底footer  ——————————————————   
+footer{
+    background-color: white !important;
+    h5{
+        padding: 25px 0;
+        text-align: center;
+        vertical-align: center;
+        color: #ACACAC;
+        font-size: 12px !important;
+    }
+}
+
+
+
+// ——————————————————  搜尋錯誤  ——————————————————   
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20vh;
+
+    .error-box{
+        margin-top: 70px;
+        display: flex;
+    
+        img{
+            width: 55px;
+            height: 55px;
+            margin-right: 13px;
+        }
+
+        .words{
+            h2{   
+                font-size: 20px;
+            }
+            h5{
+                font-size: 18px;
+            }
+        }
+    }
+}
